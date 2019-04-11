@@ -35,4 +35,11 @@ html, body {
   height: 100%;
 }
 ```
-but scrollTop becomes 0
+but scrollTop becomes 0.
+My solution is save scrollTop before hidden, and set scrollTop after removing hidden.
+
+### 6. safe area in iphoneX
+```css
+padding-bottom: constant(safe-area-inset-bottom);
+padding-bottom: env(safe-area-inset-bottom);
+```
